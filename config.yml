@@ -28,15 +28,15 @@ event:
   location: "Darmstadt, Germany"
   contact_email: "info@pycon.de"
   # program
-  cfp_open: "01.01.2025"
-  cfp_close: "01.02.2025"
-  review_deadline: "29.01.2025"
-  cfp_speakers_notifications: "01.03.2025"
-  cfp_link: "/to-be-announced/"
-  voting_url: "/to-be-announced/"
-  voting_start: "02.02.2025 12:00 CET"
-  voting_end: "15.02.2025 23:59 CET"
-  contact_program: "/to-be-announced/"
+  cfp_open: "26.11.2024"
+  cfp_close: "06.01.2025"
+  review_deadline: "26.01.2025"
+  cfp_speakers_notifications: "05.02.2025"
+  cfp_link: "https://pretalx.com/pyconde-pydata-2025/cfp"
+  voting_url: "https://pretalx.com/pyconde-pydata-2025/p/voting/signup/"
+  voting_start: "09.01.2025 12:00 CET"
+  voting_end: "19.01.2025 23:59 CET"
+  contact_program: "program25@pycon.de"
   # diversity
   financial_aid_open: "06.12.2024"
   financial_aid_close: "10.01.2025 23:59 CET"
@@ -58,10 +58,10 @@ event:
   # Code of Conduct Team
   coc_email: coc-reports@pycon.de
   team_members: |
-    - To be announced
-    - To be announced
-    - To be announced
-    - To be announced
+    - Larissa Haas
+    - Jonathon Olson
+    - Lev Dadashev
+    - Paula González Avalos
   backup_team_members: |
     - To be announced
     - To be announced
