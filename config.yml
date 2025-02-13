@@ -58,12 +58,12 @@ event:
   # Code of Conduct Team
   coc_email: coc-reports@pycon.de
   team_members: |
-    - Larissa Haas
+    - Larissa Haas (Chair)
     - Jonathon Olson
     - Lev Dadashev
     - Paula González Avalos
   backup_team_members: |
-    - To be announced
+    - Paloma Olivera
     - To be announced
 
 committees:
