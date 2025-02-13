@@ -1,0 +1,28 @@
+{
+	"name": "pyconde25-conference",
+	"image": "mcr.microsoft.com/devcontainers/anaconda",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"github.vscode-github-actions",
+				"eamodio.gitlens",
+				"charliermarsh.ruff", 
+				"GitHub.copilot"
+			]
+		},
+		"settings": {
+			"python.defaultInterpreterPath": "/usr/local/bin/python",
+			"jupyter.jupyterServerType": "local"
+		}
+	},
+	"postCreateCommand": "bash .devcontainer/init.sh",
+	"mounts": [
+		"type=bind,source=${localEnv:HOME}/.ssh,target=/root/.ssh",
+		"source=${localWorkspaceFolderBasename}-pixi,target=${containerWorkspaceFolder}/.pixi,type=volume"
+	],
+	"remoteUser": "root"
+}

@@ -5,7 +5,7 @@ authors = [
 channels = ["conda-forge"]
 description = "Docs for organizing PyCon DE & Pydata 2025"
 name = "conference"
-platforms = ["osx-arm64", "win-64", "linux-64", "osx-64"]
+platforms = ["osx-arm64", "win-64", "linux-64", "osx-64", "linux-aarch64"]
 version = "0.3.4"
 
 [tasks]
@@ -24,6 +24,8 @@ bumpversion = ">=0.6.0, <0.7"
 pymdown-extensions = ">=10.11.2, <11"
 mkdocs-open-in-new-tab = ">=1.0.5, <2"
 mkdocs-macros-plugin = ">=1.2.0, <2"
+pytanis = "*"
+webcolors = "*"
 
 [tool.pixi.dependencies]
 ruff = ">=0.4.8,<0.5"
