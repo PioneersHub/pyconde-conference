@@ -55,6 +55,8 @@ nav:
           - Sponsoring: guidelines/sponsoring.md
       - Swag:
           - Swag: guidelines/swag.md
+      - Team:
+          - Contribution: guidelines/contribution-guidelines.md
       - Video:
           - Video-Guidelines: guidelines/video.md
       - Website:
