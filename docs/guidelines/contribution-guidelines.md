@@ -1,6 +1,6 @@
 ---
 title: Guidelines for Volunteer Inactivity and Departure
-icon: fontawesome/solid/person-to-door
+icon: fontawesome/solid/door-open
 ---
 
 # 🌟 Guidelines for Active Contribution and Volunteer Inactivity
