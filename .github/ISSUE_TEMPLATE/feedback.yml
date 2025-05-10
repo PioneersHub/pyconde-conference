@@ -1,0 +1,72 @@
+name: PyCon DE Conference Feedback
+description: Submit feedback about PyCon DE Conference
+title: "[FEEDBACK] "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: committee
+    attributes:
+      label: Relevant Committee
+      description: Which committee is this feedback most relevant to?
+      options:
+        - Program Committee
+        - Communication Committee
+        - Diversity Committee
+        - Swag Committee
+        - On-Site Operations Committee
+        - Video Committee
+        - Steering Committee
+        - Infrastructure Committee
+        - General / Multiple Committees
+        - Unsure / Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: Feedback Source
+      options:
+        - Discord
+        - Helpdesk
+        - Email
+        - In-Person
+        - Social Media
+        - Survey
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Feedback Description
+      description: Describe the feedback/issue/suggestion
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Improvement
+      description: What specific improvements would you suggest?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+        - Nice to have
+
+  - type: dropdown
+    id: timeframe
+    attributes:
+      label: Implementation Timeframe
+      description: When should this be addressed?
+      options:
+        - Immediate (past PyCon DE 2025)
+        - For PyCon DE 2026
+        - Long-term improvement
