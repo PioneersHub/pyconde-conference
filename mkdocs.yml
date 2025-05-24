@@ -35,6 +35,8 @@ nav:
       - Diversity:
           - Grant-Applications: guidelines/grant-applications.md
           - Grants-Guidelines: guidelines/grants.md
+      - Toolgarden:
+          - Tools: guidelines/tools.md
       - Governance:
           - Governance: guidelines/governance.md
       - Infrastructure:
