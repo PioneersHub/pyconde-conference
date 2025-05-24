@@ -147,5 +147,5 @@ social_cards:
     # relative paths from the repository root
     cache_dir: "./.cache/plugin/social"
     site_dir: "./site/assets/images/social"
-    # convention, rename your logo accordingly
+    # by convention, rename your logo accordingly
   logo_path: "./docs/assets/images/social_card_logo.png"

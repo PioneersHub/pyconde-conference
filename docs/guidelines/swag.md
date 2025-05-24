@@ -4,11 +4,6 @@ icon: fontawesome/solid/shirt
 ---
 # Swag 
 
-!!! warning
-    This document is a work in progress. Please check back later for updates.
-
----
-
 ## Swag Guidelines
 
 We do not produce any swag except for the pre-order conference t-shirts.
