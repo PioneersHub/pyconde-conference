@@ -1,7 +1,7 @@
 ---
 # Site settings
-site_name: PyCon DE & PyData 2025
-site_url: https://pioneershub.github.io/pyconde25-conference/
+site_name: PyCon DE & PyData
+site_url: https://pioneershub.github.io/pyconde-conference/
 site_author: [
   "Alexander Hendorf",
 ]
@@ -9,8 +9,8 @@ site_description: >-
   Docs for organizing our volunteer-driven event.
 
 # Repository at GitHub
-repo_name: PioneersHub/pyconde25-conference
-repo_url: https://github.com/PioneersHub/pyconde25-conference
+repo_name: PioneersHub/pyconde-conference
+repo_url: https://github.com/PioneersHub/pyconde-conference
 
 # Copyright for footer
 copyright:
