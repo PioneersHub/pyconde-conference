@@ -1,5 +1,5 @@
 [project]
-name = "pyconde-pydata-2025-conference"
+name = "pyconde-pydata-conference"
 version = "0.3.4"
 description = "Public documentation for organizing our volunteer-driven conference."
 authors = [
