@@ -11,7 +11,7 @@ helps us work more efficiently and ensures no important details get lost. 🚀
 
 ## Inner-Committee Communication
 
-We use Discord as our primary platform for internal communication. When you join, the Admins will invite you to your
+We use **Discord** as our primary platform for internal communication. When you join, the Admins will invite you to your
 committee’s channel to get started smoothly.
 
 ## Cross-Committee Communication

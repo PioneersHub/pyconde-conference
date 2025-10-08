@@ -67,6 +67,6 @@ the formation of committees, providing guidance, and ensuring initial milestones
 
 ---
 
-[Apply here]({{config.extra.event.apply_url_committees}}){:target="_blank" .md-button .md-button--primary }
+[Steering is recruited from experienced organizers and invite-only](#){:target="_blank" .md-button .md-button--primary }
 
 ---

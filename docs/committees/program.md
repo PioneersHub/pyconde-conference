@@ -31,6 +31,14 @@ conference.
   fields
 * Newcomers are welcome
 
+* We’re looking for Program Committee members who are:
+
+  * Hands-on – an engineer at heart; you write code, do development, and enjoy building tools or automating workflows.
+  * Organized & proactive – skilled at managing processes, coordinating reviewers, and keeping timelines on track.
+  * Communicative – comfortable writing and speaking with keynote speakers, sponsors, and the community.
+
+
+
 ## Responsibilities
 
 - **Update Submission Guidelines**  

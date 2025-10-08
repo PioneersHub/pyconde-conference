@@ -29,9 +29,10 @@ We hold ourselves to high standards in everything we do, from organizing the eve
 We need enthusiastic volunteers like you! You don't need to be an expert – just bring your:
 
 - Excitement about creating an awesome experience for everyone
-- Willingness to lend a hand wherever it's needed
+- Sense of responsibility to take on a clear task, see it through, and deliver reliably
 - Passion for including people from all walks of life
 - Team spirit and openness to new ideas and people
+- Willingness to lend a hand wherever it's needed
 - Eagerness to learn and grow while helping others do the same
 
 Check out the volunteer committees you can join:

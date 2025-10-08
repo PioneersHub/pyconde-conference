@@ -52,13 +52,13 @@
 
 ## Committee Peak Times
 
-| Committee | Peak Time |
-|-----------|-----------|
-| Program | :fire: {{config.extra.committees.program.workload.peak}} |
-| Diversity | :fire: {{config.extra.committees.diversity.workload.peak}} |
-| Communication | :fire: {{config.extra.committees.communication.workload.peak}} |
-| On-Site Operations | :fire: {{config.extra.committees.on_site_operations.peak}} |
-| Video | :fire: {{config.extra.committees.video.workload.peak}} |
-| Swag | :fire: {{config.extra.committees.swag.workload.peak}} |
-| Infrastructure | :fire: {{config.extra.committees.infrastructure.workload.peak}} |
-| Code of Conduct | :fire: {{config.extra.committees.coc.workload.peak}} |
+| Committee          | Peak Time                                                           |
+|--------------------|---------------------------------------------------------------------|
+| Program            | :fire: {{config.extra.committees.program.workload.peak}}            |
+| Diversity          | :fire: {{config.extra.committees.diversity.workload.peak}}          |
+| Community Support  | :fire: {{config.extra.committees.community_support.workload.peak}}  |
+| On-Site Operations | :fire: {{config.extra.committees.on_site_operations.workload.peak}} |
+| Video              | :fire: {{config.extra.committees.video.workload.peak}}              |
+| Swag               | :fire: {{config.extra.committees.swag.workload.peak}}               |
+| Infrastructure     | :fire: {{config.extra.committees.infrastructure.workload.peak}}     |
+| Code of Conduct    | :fire: {{config.extra.committees.coc.workload.peak}}                |
