@@ -22,10 +22,7 @@
 :calendar: **{{config.extra.event.financial_aid_open}}** - Financial Aid Applications Open
 :moneybag: Diversity Committee starts processing applications
 
-:calendar: **{{config.extra.committees.swag.workload.start}}** - Swag Design Begins
-:tshirt: Swag Committee kicks into gear
-
-:calendar: **{{config.extra.committees.on_site_operations.start}}** - On-Site Planning Begins
+:calendar: **{{config.extra.committees.on_site_operations.workload.start}}** - On-Site Planning Begins
 :building_construction: On-Site Operations Committee starts preparations
 
 ## Conference Phase
