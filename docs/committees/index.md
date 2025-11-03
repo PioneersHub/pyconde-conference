@@ -33,9 +33,9 @@ The conference is realized by volunteer organizers and the [conference office](.
 While the volunteers are responsible for the conference content, authenticity and attendees' experience,
 the backoffice is responsible for the organization (sponsoring, finances, budget, contracts, etc.).
 
-!!! note:
-> The Call for Committee members for 2026 is closed for 2026.
-> We will open the Call for On-Site Volunteers in February 2026.
+!!! note
+    The Call for Committee members for 2026 is closed for 2026.  
+    We will open the Call for On-Site Volunteers in February 2026.
 
 [Apply to Volunteer Here]({{config.extra.event.apply_url_committees}}){:target="_blank" .md-button .md-button--primary }
 
@@ -54,9 +54,9 @@ the backoffice is responsible for the organization (sponsoring, finances, budget
 * Fill out the application form
 * The Steering Committee will review the applications and get back to you
 
-!!! note:
-> The Call for Committee members for 2026 is closed for 2026.
-> We will open the Call for On-Site Volunteers in February 2026.
+!!! note
+    The Call for Committee members for 2026 is closed for 2026.  
+    We will open the Call for On-Site Volunteers in February 2026.
 
 [Apply to Volunteer Here]({{config.extra.event.apply_url_committees}}){:target="_blank" .md-button .md-button--primary }
 

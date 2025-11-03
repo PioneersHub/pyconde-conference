@@ -6,9 +6,9 @@ hide:
 ---
 # 🚀 Join Our Community-Driven Conference!
 
-!!! note:
-> The Call for Committee members for 2026 is closed for 2026.
-> We will open the Call for On-Site Volunteers in February 2026.
+!!! note
+    The Call for Committee members for 2026 is closed for 2026.  
+    We will open the Call for On-Site Volunteers in February 2026.
 
 
 ## What's a Community-Driven Conference?
@@ -64,13 +64,11 @@ Make sure to familiarize yourself with the volunteer committees before you apply
 
 Got questions? We've got answers! Reach out to us at {{config.extra.event.contact_email}}.
 
-> The Call for Committee members for 2026 is closed for 2026.
-> We will open the Call for On-Site Volunteers in February 2026.
+
+!!! note
+    The Call for Committee members for 2026 is closed for 2026.  
+    We will open the Call for On-Site Volunteers in February 2026.
+ 
+[Apply to Volunteer Here]({{config.extra.event.apply_url_committees}}){:target="_blank" .md-button .md-button--primary }
 
 Join us in creating an unforgettable event that celebrates knowledge, community, and the joy of coming together!
-
----
-
-keep: [Apply to Volunteer Here]({{config.extra.event.apply_url_committees}}){:target="_blank" .md-button .md-button--primary }
-
----
