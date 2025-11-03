@@ -6,11 +6,11 @@ hide:
 
 # :fontawesome-solid-book-atlas: About PyCon DE & PyData 2025
 
-## 🚨 This is the Public Documentation for PyCon DE & PyData 2025, not the Website!
+## 🚨 This is the Public Documentation for PyCon DE & PyData 2026, not the Website!
 
 !!! info
     After some awesome years in Berlin, it was time to move on.  
-    **The conference will take place 23. - 25. April in Darmstadt, Germany.**
+    **The conference will take place 14. - 17. April 2026 in Darmstadt, Germany.**
 
 We like to share our documentation with the public to show how we work and to inspire others to do the same.
 In case you are looking for the conference website to attend or speak  please visit [pycon.de](https://pycon.de).
