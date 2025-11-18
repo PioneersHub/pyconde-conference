@@ -61,6 +61,9 @@ A team of four committee members from diverse backgrounds and experiences.
   Help collect receipts from grantees to facilitate the reimbursement process
   with [Finance](../office/finance-budget.md).
 
+- **Support Accessibility Needs:**  
+  Respond to participants who reach out with accessibility requirements and work with the organizing team to ensure they have a welcoming, inclusive, and accessible conference experience.
+
 - **Collaborate with Other Communities:**  
   Work with community partners like [PyLadies](https://pyladies.org) and reach out to other communities to ensure
   diverse participation.

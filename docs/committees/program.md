@@ -7,18 +7,20 @@ icon: fontawesome/solid/chalkboard
 
 ## Mission
 
-The On-Site Operations Committee is responsible for ensuring smooth, efficient operations **at the conference venue**.
-This includes managing the registration desk, organizing volunteers, assisting attendees, and ensuring sessions run
-without issues. The committee ensures that all on-site logistics are in place so that attendees, speakers, and
-volunteers can focus on the conference content.
+The Program Committee is responsible for shaping the conference content through careful curation of sessions, tutorials, and keynotes.  
+Its mission is to ensure a high-quality, diverse, and engaging program that reflects current trends and best practices in the community.  
+The committee manages the full review process, from call for proposals to final session selection, ensuring fairness, balance, and excellence.
 
 ## Committee Structure
 
 ### Chair(s)
 
-The chair(s) are responsible for leading the On-Site Operations Committee. They manage the committee’s timeline, recruit
+The chair(s) are responsible for leading the Program Committee. They manage the committee’s timeline, recruit
 volunteers, and organize virtual meetings. The chair(s) serve as the main point of contact for the Steering Committee
 and other committees.
+
+In addition, the chair(s) are responsible for defining and guiding the overall program strategy — ensuring that the
+conference content is state-of-the-art, diverse in topics, and well-balanced across experience levels.
 
 ### Members
 
@@ -30,6 +32,12 @@ conference.
 * Experience in programming, AI, data science, software engineering, operations, security, community, ethics or related
   fields
 * Newcomers are welcome
+
+* We’re looking for Program Committee members who are:
+
+  * Hands-on – an engineer at heart; you write code, do development, and enjoy building tools or automating workflows.
+  * Organized & proactive – skilled at managing processes, coordinating reviewers, and keeping timelines on track.
+  * Communicative – comfortable writing and speaking with keynote speakers, sponsors, and the community.
 
 ## Responsibilities
 

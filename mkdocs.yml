@@ -1,12 +1,12 @@
 ---
 site_name: PyCon DE & PyData Conference
-site_url: https://pioneershub.github.io/pyconde25-conference/
+site_url: https://pioneershub.github.io/pyconde-conference/
 site_author: Alexander Hendorf
 site_description: >-
   Docs for organizing our volunteer-driven event.
 # Repository
-repo_name: PioneersHub/pyconde25-conference
-repo_url: https://github.com/PioneersHub/pyconde25-conference
+repo_name: PioneersHub/pyconde-conference
+repo_url: https://github.com/PioneersHub/pyconde-conference
 
 #
 nav:
@@ -17,14 +17,15 @@ nav:
   - Committees:
       - committees/index.md
       - Code of Conduct: committees/code-of-conduct.md
-      - Communication: committees/communication.md
+#      - Communication: committees/communication.md
+      - Community Support: committees/community-support.md
       - Diversity: committees/diversity.md
       - Experience: committees/experience.md
-      - Infrastructure: committees/infrastructure.md
+#      - Infrastructure: committees/infrastructure.md
       - On-Site Operations: committees/on-site-ops.md
       - Program: committees/program.md
       - Steering: committees/steering.md
-      - Swag: committees/swag.md
+#      - Swag: committees/swag.md
       - Video: committees/video.md
       - Operational Models: committees/operational-model.md
       - Inner- and Cross-Committee Communication: committees/team-communication.md
@@ -35,6 +36,8 @@ nav:
       - Diversity:
           - Grant-Applications: guidelines/grant-applications.md
           - Grants-Guidelines: guidelines/grants.md
+      - Toolgarden:
+          - Tools: guidelines/tools.md
       - Governance:
           - Governance: guidelines/governance.md
       - Infrastructure:
@@ -55,10 +58,13 @@ nav:
           - Sponsoring: guidelines/sponsoring.md
       - Swag:
           - Swag: guidelines/swag.md
+      - Team:
+          - Contribution: guidelines/contribution-guidelines.md
       - Video:
           - Video-Guidelines: guidelines/video.md
       - Website:
           - Website: guidelines/website.md
+      - Tasks: guidelines/tasks.md
   - Office:
       - office/index.md
       - Communication: office/communication.md

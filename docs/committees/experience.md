@@ -82,6 +82,6 @@ The workload for the Experience Committee will vary depending on the proximity t
 :fontawesome-solid-ranking-star: **finish** {{config.extra.committees.experience.workload.end}}
 
 ---
-[Apply here]({{config.extra.event.apply_url_committees}}){:target="_blank" .md-button .md-button--primary }
+[This Committee is set up already and currently not accepting applications](#){:target="_blank" .md-button .md-button--primary }
 
 ---

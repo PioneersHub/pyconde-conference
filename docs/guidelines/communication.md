@@ -4,10 +4,6 @@ icon: fontawesome/solid/bullhorn
 ---
 # Communication-Guidelines
 
-!!! warning
-    This document is a work in progress. Please check back later for updates.
-
-
 ## Newsletters
 
 We can send newsletters to everyone who has signed up in the past (10,000+ people).  

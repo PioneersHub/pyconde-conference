@@ -6,6 +6,11 @@ hide:
 ---
 # 🚀 Join Our Community-Driven Conference!
 
+!!! note
+    The Call for Committee members for 2026 is closed for 2026.  
+    We will open the Call for On-Site Volunteers in February 2026.
+
+
 ## What's a Community-Driven Conference?
 
 Imagine a conference where everyone, from attendees to speakers to organizers, comes together to create something amazing. That's us! We're not a big corporation – we're a group of passionate volunteers who believe in the power of sharing knowledge and building connections.
@@ -29,9 +34,10 @@ We hold ourselves to high standards in everything we do, from organizing the eve
 We need enthusiastic volunteers like you! You don't need to be an expert – just bring your:
 
 - Excitement about creating an awesome experience for everyone
-- Willingness to lend a hand wherever it's needed
+- Sense of responsibility to take on a clear task, see it through, and deliver reliably
 - Passion for including people from all walks of life
 - Team spirit and openness to new ideas and people
+- Willingness to lend a hand wherever it's needed
 - Eagerness to learn and grow while helping others do the same
 
 Check out the volunteer committees you can join:
@@ -58,7 +64,11 @@ Make sure to familiarize yourself with the volunteer committees before you apply
 
 Got questions? We've got answers! Reach out to us at {{config.extra.event.contact_email}}.
 
+
+!!! note
+    The Call for Committee members for 2026 is closed for 2026.  
+    We will open the Call for On-Site Volunteers in February 2026.
+ 
 [Apply to Volunteer Here]({{config.extra.event.apply_url_committees}}){:target="_blank" .md-button .md-button--primary }
 
 Join us in creating an unforgettable event that celebrates knowledge, community, and the joy of coming together!
-
