@@ -44,7 +44,7 @@ Please complete the [Financial Aid application form]({{config.extra.event.financ
 
 Grants need to be accepted (or rejected) within seven days of notification.
 
-### Refund Management
+### Reimbursement Management
 
 #### Free Ticket  
 Personalized coupons will be generated for grant recipients to claim their free ticket.
