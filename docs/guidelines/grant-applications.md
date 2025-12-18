@@ -60,6 +60,7 @@ Grants involving reimbursements will be processed based on approved receipts (e.
 - Reimbursements before the conference or via other means, such as cash, are not possible.
 - Travel grants are only available to registered attendees who will be attending the conference in person.
 - Grants are non-transferable.
+- The **Masterclasses day** (April 17th) is **not** covered by the grant.
 
 As part of our efforts to reduce the conference's carbon footprint, we encourage attendees to use trains rather than airplanes when possible. Air travel will not be reimbursed if alternative transportation options are easily available. This will be evaluated on a case-by-case basis. Please consider this when estimating your travel costs.
 
