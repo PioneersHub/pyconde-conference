@@ -1,0 +1,98 @@
+name: Auto-label feedback issues
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-label:
+    if: contains(github.event.issue.title, '[FEEDBACK]')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add committee label
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body;
+            
+            const committeeMatch = body.match(/### Relevant Committee\s*\n\s*(.+)/);
+            if (committeeMatch) {
+              const committee = committeeMatch[1].trim();
+              
+              const labelMap = {
+                'Program Committee': 'feedback/program-committee',
+                'Communication Committee': 'feedback/communication-committee',
+                'Diversity Committee': 'feedback/diversity-committee',
+                'Swag Committee': 'feedback/swag-committee',
+                'On-Site Operations Committee': 'feedback/onsite-operations-committee',
+                'Video Committee': 'feedback/video-committee',
+                'Steering Committee': 'feedback/steering-committee',
+                'Infrastructure Committee': 'feedback/infrastructure-committee',
+                'General / Multiple Committees': 'feedback/general',
+                'Unsure / Other': 'feedback/general'
+              };
+              
+              const label = labelMap[committee];
+              if (label) {
+                try {
+                  await github.rest.issues.addLabels({
+                    issue_number: issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    labels: [label, 'feedback']
+                  });
+                  console.log(`Added label: ${label}`);
+                } catch (error) {
+                  console.error(`Failed to add label: ${error}`);
+                }
+              } else {
+                console.log(`No mapping found for committee: ${committee}`);
+              }
+            }
+            
+            const priorityMatch = body.match(/### Priority\s*\n\s*(.+)/);
+            if (priorityMatch) {
+              const priority = priorityMatch[1].trim().toLowerCase();
+              const priorityLabel = `priority/${priority}`;
+              
+              try {
+                await github.rest.issues.addLabels({
+                  issue_number: issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  labels: [priorityLabel]
+                });
+                console.log(`Added priority label: ${priorityLabel}`);
+              } catch (error) {
+                console.log(`Priority label doesn't exist: ${priorityLabel}`);
+              }
+            }
+            
+            // Parse timeframe and add label if exists
+            const timeframeMatch = body.match(/### Implementation Timeframe\s*\n\s*(.+)/);
+            if (timeframeMatch) {
+              const timeframe = timeframeMatch[1].trim();
+              
+              const timeframeMap = {
+                'Immediate (past PyCon DE 2025)': 'timeframe/immediate',
+                'For PyCon DE 2026': 'timeframe/pycon2026',
+                'Long-term improvement': 'timeframe/long-term'
+              };
+              
+              const timeframeLabel = timeframeMap[timeframe];
+              if (timeframeLabel) {
+                try {
+                  await github.rest.issues.addLabels({
+                    issue_number: issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    labels: [timeframeLabel]
+                  });
+                  console.log(`Added timeframe label: ${timeframeLabel}`);
+                } catch (error) {
+                  console.log(`Timeframe label doesn't exist: ${timeframeLabel}`);
+                }
+              }
+            }
