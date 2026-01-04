@@ -12,7 +12,7 @@ icon: fontawesome/solid/clipboard-check
 
 Use the online platform ==Pretalx== to review your assigned submissions by the end of day on
 **{{config.extra.event.review_deadline}}**. If you have additional time and would like to review more submissions,
-please contact the program helpdesk.
+please contact the program via {{config.extra.event.contact_program}}.
 
 By reviewing submissions, you are helping the editors and the program committee make informed decisions on which talks
 to accept or reject. The main criteria for evaluating each submission are the quality of the submission itself and how
@@ -23,7 +23,7 @@ in the broader field. (See detailed criteria below.)
 
 Each reviewer should:
 
-- Receive an invite to join the **reviewers team** via the helpdesk.
+- Receive an invitation to join the **reviewers team**.
 - Have an account on the Pretalx platform (either use an existing account or create a new one). Check your email (
   including spam/junk folders) for a Pretalx invitation in the last few days.
 - Log in to the ==Pretalx== system and choose the event.
@@ -146,7 +146,7 @@ Step-by-step guide to using the Pretalx platform for reviewing submissions.
 
 ![pretlax-walkthrough-1](../assets/images/guidelines/pretlax-walkthrough-1.png)
 
-**If you haven’t received an invitation or have trouble signing up, please contact helpdesk.**
+**If you haven’t received an invitation or have trouble signing up, please contact us via {{config.extra.event.contact_program}}.**
 
 2\. Click on the invite link.  
   (Note: the invite link only works once. If you want to get back to reviewing later, go to {{config.extra.event.cfp_link}})
