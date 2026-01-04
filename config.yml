@@ -32,7 +32,7 @@ event:
   cfp_close: "21.12.2025 23:59 CET"
   review_deadline: "28.01.2026"
   cfp_speakers_notifications: "11.02.2026"
-  cfp_link: "TBA"
+  cfp_link: "https://pretalx.com/orga/event/pyconde-pydata-2026/"
   voting_url: "TBA"
   voting_start: "TBA"
   voting_end: "TBA"
