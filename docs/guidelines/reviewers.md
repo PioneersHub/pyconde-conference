@@ -4,13 +4,10 @@ icon: fontawesome/solid/clipboard-check
 ---
 # Reviewer Guidelines: {{config.extra.event.event_name}}
 
-!!! warning
-    This document is a work in progress. Please check back later for updates.
-
 !!! note
     ==This is an example for an event using Pretalx for the CfP, other tools may have other requirements.==
 
-Use the online platform ==Pretalx== to review your assigned submissions by the end of day on
+Use the online platform [Pretalx](https://pretalx.com/orga/event/pyconde-pydata-2026/reviews/) to review your assigned submissions by the end of day on
 **{{config.extra.event.review_deadline}}**. If you have additional time and would like to review more submissions,
 please contact the program via {{config.extra.event.contact_program}}.
 
@@ -26,9 +23,9 @@ Each reviewer should:
 - Receive an invitation to join the **reviewers team**.
 - Have an account on the Pretalx platform (either use an existing account or create a new one). Check your email (
   including spam/junk folders) for a Pretalx invitation in the last few days.
-- Log in to the ==Pretalx== system and choose the event.
+- Log in to the Pretalx system and choose the event.
 - Pick the "Review" option from the left menu bar.
-- Start reviewing and check ==Pretalx== regularly as new proposals may be assigned to you.
+- Start reviewing and check Pretalx regularly as new proposals may be assigned to you.
 
 Check out the Step-by-Step Pretalx Walkthrough below 🙂
 
@@ -127,7 +124,7 @@ We encourage and discourage the following aspects in submissions:
 - Uses closed-source software.
 - The same talk has been given at other conferences (especially within similar circles).
 
-## Practical Tips for Using ==Pretalx==
+## Practical Tips for using Pretalx
 
 - If a proposal seems straightforward to you, feel free to score it and write your review.
 - Use the search bar to find additional proposals on similar topics. Sometimes reviewing multiple proposals can help
@@ -137,7 +134,7 @@ We encourage and discourage the following aspects in submissions:
 
 Thank you for your time and contribution to making the review process effective and successful!
 
-## ==Pretalx Walkthrough==
+## Pretalx Walkthrough
 
 Step-by-step guide to using the Pretalx platform for reviewing submissions.
 
