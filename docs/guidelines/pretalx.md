@@ -19,6 +19,10 @@ Our guidelines are based upon our experience made with a team of:
 - 10 committee members
 - 30-50 reviewers
 
+Pretalx is actively being developed and provides [documentation](https://docs.pretalx.org/user/) on it's own. While this
+documentation does not describe all functionality it should be consulted if something in this document is outdated and
+no longer working.
+
 ## Creating the Event
 
 A super-admin creates the event.
@@ -62,6 +66,9 @@ Set-up by super-admin.
 
 - [ ] Can create events
 - [ ] Is a reviewer _(this is an implicit role anyway)_
+
+!!! tip "Delegating Tasks to Committee Members" 
+    Some menus/configurations are only available to admins (e.g., managing tracks). If this task is delegated to a member of the program committee besides the chairs, admin rights are required.
 
 
 ### Program Committee
@@ -141,7 +148,7 @@ We set the field lengths in Content, tab "_Fields_".
 
 ### Proposal Title
 
-We use a limit to 100 characters for readability in other context (e.g., the schedule).  
+We use a limit of 100 characters for readability in other context (e.g., the schedule).  
 Platforms as YouTube have a 100-character limit for titles, and it'd be hard to shorten titles later.
 
 ### Session Type
@@ -185,7 +192,7 @@ Custom questions help to bring more context to the proposal. They are also helpf
 Always include who will see the information and if it will be published.
 
 !!! tip "Custom Questions"
-    Consider which information you actaully need, answering many questions can be exhausting for the submitter.  
+    Consider which information you actually need, answering many questions can be exhausting for the submitter.  
     On the other hand, it's hard to collect required information later.  
 
 !!! tip "Not all information is required now"
@@ -251,7 +258,7 @@ Visible to: :fontawesome-solid-user-secret: committee members and reviewers only
 
 Optional, material to support the proposal.
 
-Visible to: :fontawesome-solid-user-secret: committee members and reviewers only
+Visible to: :fontawesome-solid-globe: world
 
 #### Link to talk slides
 
@@ -269,20 +276,6 @@ We try to avoid repeating content that is already available.
 This is not a strict policy, depending on the topic the on-site discussion might be valuable.
 
 Visible to: :fontawesome-solid-user-secret: committee members and reviewers only
-
-####  Would you give this talk at a local meetup?
-
-> Perfect your presentation by giving it at a local meetup and support local communities.
-
-The conference gives us a lot of exposure. 
-We want to use this to support local communities that often lack speakers. (1)
-{ .annotate }
-
-1.    Location is required for matching a question in the speaker profile.
-
-Visible to: :fontawesome-solid-user-secret: committee members and reviewers only
-
----
 
 #### Honor-code original work
 
@@ -357,7 +350,7 @@ All text answers, visible to: :fontawesome-solid-globe: world
 
 ## Session Types
 
-We use the following descriptive session types:
+We use the following descriptive session types (duration is displayed by Pretalx on default and should not be part of the name):
 
 |             |   duration |
 |-------------|-----------:|
@@ -369,13 +362,16 @@ Some sessions are invited or organized not via the CfP.
 
 Private types are:
 
-|                       |   duration |
-|-----------------------|-----------:|
-| keynote               | 45 minutes |
-| sponsored talk        | 30 minutes |
-| sponsored talk (long) | 45 minutes |
-| sponsored tutorial    | 90 minutes |
-| panel                 | 60 minutes |
+|                           |   duration |
+|---------------------------|-----------:|
+| keynote                   | 45 minutes |
+| sponsored talk            | 30 minutes |
+| sponsored talk (long)     | 45 minutes |
+| sponsored talk (keystone) | 90 minutes |
+| sponsored tutorial        | 90 minutes |
+| panel                     | 60 minutes |
+
+To prevent these session types from being selected in the CfP, the 'Require access code' option must be selected when creating the session type.
 
 ## Sponsored Talks
 
@@ -384,5 +380,22 @@ Sponsored talks are a great way to support the conference and get your message a
 The Program Committee will work actively with the sponsors to ensure the content is valuable to the attendees.
 
 Sponsored content is moderate and accounts for about 10% of the overall program.
+
+## Managing Invited Talks with Access Codes
+Access codes allow sessions to be created outside of the regular CfP. Those provided with a code can create new
+proposals even after the deadline has expired or for session types that are not available as part of the normal CfP.
+The session creation process itself is identical for the end user to the normal CfP.
+
+New access codes can be crated at the bottom of the "Call for Proposals" menu. Following procedure is considered good
+practice:
+
+- For personalized access codes (e.g., sponsors) individual access codes should be created for each individual entity 
+    with a "Maximum uses" set to one.
+- Changing the beginning of the access code to something descriptive (e.g., "\<Sponsorname\>RestOfTheCode") allows 
+    easier tracking of who already has used their code.
+- Access codes should be as restrictive as possible, at minimum the session type must be selected.
+
+!!! tip "Finding talks created via an access code"
+    If an access code has been used, opening the editing view of the access code provides a link to the talk(s) created with this code. If no talks are displayed, they have been deleted.
 
 ---
