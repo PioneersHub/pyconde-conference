@@ -35,7 +35,7 @@ for one of the following:
 
 ### How to Access the Voting Page
 
-- Go to [the community voting page]({{config.extra.event.voting_url}}).
+- Go to the community voting page (specific per year).
 - Enter a qualified email address (see: "Who Can Participate" above)
 - The system will verify if the email address is in the database. If it is, you will receive an email with a magic link.
 - Check your inbox (and spam) for the email containing the magic link.
