@@ -7,11 +7,8 @@ set -o pipefail  # Terminates the script if a command in a pipe fails
 # Install Python Version
 conda install -y python=3.12
 
-# Install pixi as package manager and workflow tool
-curl -fsSL https://pixi.sh/install.sh | bash
-
-# Replace the current shell process with (a new instance of) bash (to make pixi known)
-exec bash
+# Install uv as package manager
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Install dependencies
-pixi install
+uv sync

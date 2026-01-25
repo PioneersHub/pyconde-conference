@@ -2,6 +2,8 @@ import sys
 import os
 import pandas as pd
 import numpy as np
+import requests
+
 from pytanis import GSheetsClient, PretalxClient
 from pytanis.pretalx import subs_as_df, reviews_as_df, speakers_as_df
 from pytanis.google import mark_rows, gsheet_col
@@ -47,7 +49,7 @@ f.close()
 # Combined configuration for pretalx and gsheets. 
 # TODO: Write jsons with secret and token
 cfg = {
-    'event_name': 'pyconde-pydata-2025',
+    'event_name': 'pyconde-pydata-2026',
     'selection_spread_id': gsheet_spread_id,
     'selection_work_name': gsheet_worksheet_name,
     'Pretalx': {
@@ -63,6 +65,9 @@ cfg = {
 # TODO: Change back to using Config object exposed via pytanis (as part of the pipeline generate the config.toml file in the home based on the pipeline input)
 class PretalxBasicModel(BaseModel):
     api_token: str | None = None
+    api_version: str = 'v1'
+    api_base_url: str = 'https://pretalx.com/'
+    timeout: int | None = None
 
 class GoogleBasicModel(BaseModel):
     client_secret_json: str | None = None
@@ -76,8 +81,7 @@ class PytanisBasicConfigModel(BaseModel):
 v_cfg = PytanisBasicConfigModel.model_validate(cfg)
 
 # Read Reviews and all Submissions
-pretalx_client = PretalxClient(
-    config=v_cfg, blocking=True)
+pretalx_client = PretalxClient(config=v_cfg, blocking=True)
 subs_count, subs = pretalx_client.submissions(cfg['event_name'], params={'questions': 'all', 'limit': 1000})
 spkrs_count, spkrs = pretalx_client.speakers(cfg['event_name'], params={'questions': 'all', 'limit': 1000})
 revs_count, revs = pretalx_client.reviews(cfg['event_name'])
@@ -90,6 +94,10 @@ spkrs_df = speakers_as_df(spkrs, with_questions=True)
 subs_df = subs_df.explode([Col.speaker_code, Col.speaker_name])
 subs_df = pd.merge(subs_df, spkrs_df.drop(columns=[Col.speaker_name, Col.submission]), on=Col.speaker_code)
 subs_df = implode(subs_df, [col for col in spkrs_df if col not in [Col.submission]])
+
+
+# Extract email from pretalx_user dict for grouping
+revs_df[Col.pretalx_user] = revs_df[Col.pretalx_user].apply(lambda x: x.get('email') if isinstance(x, dict) else x)
 
 # Balance reviews by their personal mean (remove evaluation bias)
 user_means = revs_df.groupby([Col.pretalx_user], group_keys=False)[[Col.review_score]].mean().reset_index()
@@ -107,31 +115,31 @@ avg_scores = avg_scores.groupby([Col.submission]).agg(**{Col.review_score: (Col.
 subs_df = pd.merge(subs_df, avg_scores, on=Col.submission)
 
 # Restructure the Sheet
-subs_df.drop(columns=['Q: Link to talk slides',
+subs_df.drop(columns=['Q: Link to talk slides:',
                     #   'Q: X / Twitter handle',
                       'Q: Mastodon',
-                      'Q: I have read and agree to the Code of Conduct', 
+                      'Q: I have read and agree to the Code of Conduct.', 
                       'Created',
-                      'Q: Picture',
-                      'Q: Public link to supporting material, e.g. videos, Github, etc.',
-                      'Q: Abstract as a tweet (X) or toot (Mastodon)',
+                    #   'Q: Picture',
+                      'Q: Public link to supporting material, e.g. videos, Github:',
+                    #   'Q: Abstract as a tweet (X) or toot (Mastodon)',
                       'Submission type id']
             , inplace=True)
 
-subs_df.rename(columns={'Q: Expected audience expertise: Python': 'Python expertise',
-                        'Q: Expected audience expertise: Domain': 'Domain expertise',
-                        'Q: I identify as a member of an underrepresented group': 'Underrepresented',
+subs_df.rename(columns={'Q: Expected audience expertise in Python:': 'Python expertise',
+                        'Q: Expected audience expertise in your talk\'s domain:': 'Domain expertise',
+                        'Q: I identify as a member of an underrepresented group.': 'Underrepresented',
                         'Q: Country of residence': 'Country',
                         'Q: Github': 'Github',
                         'Q: LinkedIn': 'LinkedIn',
                         'Q: Homepage': 'Homepage',
                         'Q: Company / Institute': 'Affiliation',
                         'Q: Position / Job': 'Position',
-                        'Q: I will present my talk on site': 'Onsite talk',
-                        'Q: Notes for reviewers only': 'Reviewer notes',
-                        'Q: I hereby declare that this proposal is my own original work': 'Original work',
-                        'Q: Did you use an LLM, e.g. ChatGPT, to help you with this proposal?': 'ChatGPT used',
-                        'Q: How should we address you?': 'Pronouns',
+                        'Q: I will present my talk on site.': 'Onsite talk',
+                        # 'Q: Notes for reviewers only': 'Reviewer notes',
+                        'Q: Is this proposal your original work?': 'Original work',
+                        # 'Q: Did you use an LLM, e.g. ChatGPT, to help you with this proposal?': 'ChatGPT used',
+                        'Q: How should we address you? (i.e. he/she/they/...)': 'Pronouns',
                         'Q: I am open to receiving invitations from meet-up organizers to showcase my work at local meet-ups.': 'Meetup interested',
                         'Q: City of residence': 'City'},
               inplace=True)
@@ -148,20 +156,32 @@ col = subs_df.pop("State")
 subs_df = pd.concat([subs_df, col.to_frame()], axis=1)
 
 # avoid multi-lines cells in GSheet
-subs_df['Reviewer notes'] = subs_df['Reviewer notes'].str.replace('\n', ' ')
+# subs_df['Reviewer notes'] = subs_df['Reviewer notes'].str.replace('\n', ' ')
 
 # subs_df.sort_values("Votes Sum > 1", inplace=True, ascending=False)
 subs_df.reset_index(inplace=True, drop=True)
 
+print('Prepared', len(subs_df), 'submissions for GSheet update.')
+print('Start fetching public votes ...')
 
-# Get public voting results and join
-votes_df = pd.read_csv(
-    f"https://pretalx.com/{cfg['event_name']}/schedule/export/public_votes.csv", 
-    storage_options = {
-        'Authorization': f'Token {pretalx_api_key}',
-        'Content-Type': 'text/plain'
+
+# TODO: fix authentication claiming the cookies
+# Get public voting results via API
+response = requests.get(
+    f"https://pretalx.com/{cfg['event_name']}/schedule/export/public_votes.csv",
+    cookies={
+        'pretalx_csrftoken': '',
+        'pretalx_session': ''
     }
 )
+
+if response.status_code == 200:
+    from io import StringIO
+    votes_df = pd.read_csv(StringIO(response.text))
+else:
+    print(f"Failed: {response.status_code}")
+    votes_df = pd.DataFrame()
+
 votes_df = votes_df.rename(columns={'code': Col.submission, 'score': Col.vote_score})
 votes_df = votes_df.groupby(Col.submission).aggregate({Col.vote_score: lambda x: x.tolist()}).reset_index()
 
@@ -171,6 +191,8 @@ votes_df["Votes Sum > 1"] = votes_df[Col.vote_score].map(lambda votes: sum([vote
 votes_df["Avg Vote Score"] = votes_df[Col.vote_score].map(lambda x: np.mean(x))
 
 subs_df = pd.merge(subs_df, votes_df, on=Col.submission, how='left')
+
+print('Merged public votes into submissions dataframe, now updating GSheet...')
 
 ## Save it to GSheet
 # make subsmission code a hyperlink

@@ -84,9 +84,9 @@ The easiest way to execute any python script that is provided within this reposi
 2. Open VS Code and make sure to have the Dev Containers Extension from Microsoft installed.
 3. Open the cloned project in VS Code and from the bottom right corner confirm to open the project to be opened within the Devcontainer.
 
-If you miss any dependencies check out the devcontainer.json within the .devcontainer folder. Otherwise, all setup for the pixi environment (including the installation of the dependencies) is all done.
+If you miss any dependencies check out the devcontainer.json within the .devcontainer folder. Otherwise, all setup for the uv environment (including the installation of the dependencies) is all done.
 
-1. To execute scripts, activate the default environment with `pixi shell` and execute any python script with `python <script.py>` (this makes sure that all dependencies as specified in `pixi.toml` are known.)
+1. To execute scripts, you can either use `uv run python <script.py>` directly, or activate the virtual environment with `source .venv/bin/activate` and then execute any python script with `python <script.py>` (this makes sure that all dependencies as specified in `pyproject.toml` are available.)
 
 ## Community Playbooks by Pioneers Hub
 
