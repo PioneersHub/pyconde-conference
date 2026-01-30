@@ -11,22 +11,31 @@ from pydantic import BaseModel
 from pytanis.utils import implode
 from pytanis.review import Col
 
+# 'pretalx_csrftoken': 'XTHM4OabU8aH4c1cJxQ7Pr7VP0bVaI9E',
+# 'pretalx_session': 'e91awccnlynhgfpu4cbhufij9wbx1vg6'
+
 # pass API key as input arg to the script or take from environment variable
 pretalx_api_key = None
 gsheet_client_secret_json = None
 gsheet_spread_id = None
 gsheet_worksheet_name = None
+pretalx_csrftoken = None
+pretalx_session = None
 
 if len(sys.argv) > 1:
     pretalx_api_key = sys.argv[1]
     gsheet_client_secret_json = sys.argv[2]
     gsheet_spread_id = sys.argv[3]
     gsheet_worksheet_name = sys.argv[4]
+    pretalx_csrftoken = sys.argv[5]
+    pretalx_session = sys.argv[6]
 else:
     pretalx_api_key = os.environ.get('PROGRAM_PRETALX_API_KEY')
     gsheet_client_secret_json = os.environ.get('PROGRAM_GSHEET_CLIENT_SECRET_JSON')
     gsheet_spread_id = os.environ.get('PROGRAM_GSHEET_SPREAD_ID')
     gsheet_worksheet_name = os.environ.get('PROGRAM_GSHEET_WORKSHEET_NAME')
+    pretalx_csrftoken = os.environ.get('PROGRAM_PRETALX_CSRFTOKEN')
+    pretalx_session = os.environ.get('PROGRAM_PRETALX_SESSION')
 
 if (pretalx_api_key is None) | (gsheet_client_secret_json is None) | (gsheet_spread_id is None) | (gsheet_worksheet_name is None):
     # determine which variable is missing
@@ -170,8 +179,8 @@ print('Start fetching public votes ...')
 response = requests.get(
     f"https://pretalx.com/{cfg['event_name']}/schedule/export/public_votes.csv",
     cookies={
-        'pretalx_csrftoken': '',
-        'pretalx_session': ''
+        'pretalx_csrftoken': pretalx_csrftoken,
+        'pretalx_session': pretalx_session
     }
 )
 
