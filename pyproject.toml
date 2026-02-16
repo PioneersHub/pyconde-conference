@@ -21,7 +21,7 @@ dependencies = [
     "mkdocs-open-in-new-tab>=1.0.8",
     "omegaconf>=2.3.0",
     "pymdown-extensions>=10.14.3",
-    "pytanis @ git+https://github.com/PioneersHub/pytanis.git@main",
+    "pytanis[google] @ git+https://github.com/PioneersHub/pytanis.git@main",
     "webcolors>=24.11.1",
 ]
 
