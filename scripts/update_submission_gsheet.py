@@ -217,7 +217,7 @@ from gspread_formatting import set_frozen, set_row_height, format_cell_range, ce
 worksheet = gsheet_client.gsheet(cfg['selection_spread_id'], cfg['selection_work_name'])
 set_frozen(worksheet, rows=1, cols=1);
 
-set_row_height(worksheet, "1:500", 50);
+set_row_height(worksheet, f"1:{len(subs_df) + 1}", 50)
 
 for idx, col in enumerate(subs_df.columns):
     if col not in {'Title', 'Track', 'Speaker name', 'ChatGPT used', 'Reviewer notes', 'Biography', 'Position', 'LinkedIn', 'Github', 'Affiliation', 'Homepage'}:
