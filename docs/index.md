@@ -1,10 +1,10 @@
 ---
-title: About PyCon DE & PyData 2025
+title: About PyCon DE & PyData 2026
 hide:
   - navigation
 ---
 
-# :fontawesome-solid-book-atlas: About PyCon DE & PyData 2025
+# :fontawesome-solid-book-atlas: About PyCon DE & PyData 2026
 
 ## 🚨 This is the Public Documentation for PyCon DE & PyData 2026, not the Website!
 
@@ -17,7 +17,7 @@ In case you are looking for the conference website to attend or speak  please vi
 
 ## 🤝 A Joint Conference
 
-PyCon DE & PyData 2025 brings together Python communitie,s in a unique collaboration.
+PyCon DE & PyData 2026 brings together Python communitie,s in a unique collaboration.
 From programming, software development, and data science to machine learning and artificial intelligence to MLOps,
 Community, ethics, our conference covers a wide range of topics.
 
@@ -113,7 +113,7 @@ Website: [Pioneers Hub](https://www.pioneershub.org/en/)
 
 ---
 
-Join us in making PyCon DE & PyData 2025 an unforgettable experience for the Python community!
+Join us in making PyCon DE & PyData 2026 an unforgettable experience for the Python community!
 
 --- 
 ## A Big Thank You
