@@ -27,10 +27,6 @@ this account are:
 
 {{config.extra.event.team_members}}
 
-In the event of a conflict of interest, you may directly contact any of the lead incident responders:
-
-{{config.extra.event.backup_team_members}}
-
 ### Report Data
 
 When you make a report via email or phone, please include:
