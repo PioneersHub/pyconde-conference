@@ -57,11 +57,11 @@ event:
   # Code of Conduct Team
   coc_email: coc-reports@pycon.de
   team_members: |
-    - To be announced
     - Larissa Haas
     - Esin Secil Comak
     - Jonathon Olson
     - Lev Dadashev
+  coc_form: "https://forms.gle/R38i3QTzxxARw3WJA"
 
 committees:
   # Committee names must match the headers in the committees.md file
