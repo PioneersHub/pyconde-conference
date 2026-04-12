@@ -27,6 +27,8 @@ this account are:
 
 {{config.extra.event.team_members}}
 
+You can use this [form to report incidents anonymously]{{config.extra.event.coc_form}}
+
 ### Report Data
 
 When you make a report via email or phone, please include:
