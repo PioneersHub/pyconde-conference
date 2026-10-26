@@ -19,23 +19,23 @@ copyright:
 
 # Event details
 event:
-  event_name: "PyCon DE & PyData 2026"
-  start_date: "14.04.2026"
-  end_date: "16.04.2026"
-  day_before: "13.04.2026"
+  event_name: "PyCon DE & PyData 2027"
+  start_date: "20.04.2027"
+  end_date: "22.04.2027"
+  day_before: "19.04.2027"
   month: "April"
-  year: "2026"
-  location: "Darmstadt, Germany"
+  year: "2027"
+  location: "Heidelberg, Germany"
   contact_email: "info@pycon.de"
   # program
-  cfp_open: "19.11.2025"
-  cfp_close: "21.12.2025 23:59 CET"
-  review_deadline: "28.01.2026"
-  cfp_speakers_notifications: "11.02.2026"
-  cfp_link: "https://pretalx.com/orga/event/pyconde-pydata-2026/"
+  cfp_open: "04.11.2026"
+  cfp_close: "20.12.2026 23:59 CET"
+  review_deadline: "21.01.2027"
+  cfp_speakers_notifications: "10.02.2026"
+  cfp_link: "https://pretalx.com/orga/event/pyconde-pydata-2027/"
   voting_start: "TBA"
   voting_end: "TBA"
-  contact_program: "program26@pycon.de"
+  contact_program: "program27@pycon.de"
   # diversity
   financial_aid_open: "21.10.2026"
   financial_aid_close: "27.12.2026 23:59 CET"
@@ -47,8 +47,8 @@ event:
   call_for_committee_close: "31.10.2025"
   apply_url_committees: "https://pioneershub.typeform.com/to/X4DSSKpG"
   # volunteers
-  call_for_volunteers_open: "01.03.2026"
-  call_for_volunteers_close: "15.03.2026"
+  call_for_volunteers_open: "15.01.2027"
+  call_for_volunteers_close: "07.02.2026"
   apply_url_volunteers: "/to-be-announced/"
   # tickets
   ticket_sales_open: "19.11.2025"
