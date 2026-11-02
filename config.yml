@@ -1,6 +1,6 @@
 ---
 # Site settings
-site_name: PyCon DE & PyData
+site_name: PyCon DE
 site_url: https://pioneershub.github.io/pyconde-conference/
 site_author: [
   "Alexander Hendorf",
@@ -19,7 +19,7 @@ copyright:
 
 # Event details
 event:
-  event_name: "PyCon DE & PyData 2027"
+  event_name: "PyCon DE 2027"
   start_date: "20.04.2027"
   end_date: "22.04.2027"
   day_before: "19.04.2027"
@@ -32,7 +32,7 @@ event:
   cfp_close: "20.12.2026 23:59 CET"
   review_deadline: "21.01.2027"
   cfp_speakers_notifications: "10.02.2026"
-  cfp_link: "https://pretalx.com/orga/event/pyconde-pydata-2027/"
+  cfp_link: "https://pretalx.com/orga/event/pyconde-2027/"
   voting_start: "TBA"
   voting_end: "TBA"
   contact_program: "program27@pycon.de"
